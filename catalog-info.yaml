@@ -3,7 +3,7 @@ kind: API
 metadata:
   name: parcel-events
   title: parcel-events
-  description: Parcel lifecycle: acceptance, cancellation, dispatch, and audit; isolated UX validation.
+  description: Parcel lifecycle - acceptance, cancellation, dispatch, and audit; isolated UX validation.
   annotations:
     contract-first-idp.github.io/scm-provider: github
     contract-first-idp.github.io/scm-host: github.com
