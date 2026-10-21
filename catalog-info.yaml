@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: parcel-events
+  title: parcel-events
+  description: Parcel lifecycle: acceptance, cancellation, dispatch, and audit; isolated UX validation.
+  annotations:
+    contract-first-idp.github.io/scm-provider: github
+    contract-first-idp.github.io/scm-host: github.com
+    contract-first-idp.github.io/domain-org: contract-first-kafka
+    contract-first-idp.github.io/domain-repo: kafka-ux-check-domain
+    contract-first-idp.github.io/repository-name: parcel-dispatch-parcel-events-api
+    contract-first-idp.github.io/schema-registry-group-id: io.github.contractfirstkafka.kafkaux.parceldispatch
+    contract-first-idp.github.io/schema-registry-artifact-id: parcel-events
+spec:
+  type: asyncapi
+  lifecycle: production
+  owner: group:default/domain-maintainers
+  system: system:default/parcel-dispatch
+  definition:
+    $text: ./specification.yaml
